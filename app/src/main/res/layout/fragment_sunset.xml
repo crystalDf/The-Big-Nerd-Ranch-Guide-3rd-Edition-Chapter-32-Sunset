@@ -10,14 +10,14 @@
 
     <FrameLayout
         android:id="@+id/sky"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/blue_sky"
         app:layout_constraintBottom_toTopOf="@+id/sea"
-        app:layout_constraintVertical_weight="0.61"
-        android:background="@color/blue_sky">
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="0.61">
 
         <ImageView
             android:id="@+id/sun"
@@ -30,7 +30,7 @@
 
     <FrameLayout
         android:id="@+id/sea"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sky"
@@ -42,7 +42,7 @@
         <ImageView
             android:id="@+id/shadow"
             android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_height="64dp"
             android:layout_gravity="center"
             android:src="@drawable/sun"/>
 
